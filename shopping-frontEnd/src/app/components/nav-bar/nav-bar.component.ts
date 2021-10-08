@@ -23,5 +23,4 @@ export class NavBarComponent implements OnInit {
     console.log(this.searchTerm);
     this.cartService.search.next(this.searchTerm);
   }
-
 }
