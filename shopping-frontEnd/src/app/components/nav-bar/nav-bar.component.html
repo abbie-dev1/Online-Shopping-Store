@@ -1,10 +1,9 @@
-   <header>
+<!-- <header>
     <div class="navbar navbar-dark bg-primary shadow-sm">
         <div class="navbar-brand align-item-center d-flex">
-            <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;
-                
-            </i>
-            <strong style="font-size: 30px;">Flipkart</strong>
+                <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png" class="mb-5"/>&nbsp;
+        
+            <strong style="font-size: 20px;">AB_Tech</strong>
             <div class="form-group">
                 <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
             </div>
@@ -17,4 +16,62 @@
             <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
         </button>
     </div>
-</header>
+</header> -->
+
+
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <h1> <mdb-navbar-brand><a class="navbar-brand" href="#">AB_Tech</a></mdb-navbar-brand></h1>
+   
+  
+    <!-- Collapsible content -->
+    <links>
+  
+      <!-- Links Sign In-->
+  
+      <!-- <ul class="navbar-nav ml-auto" *ngIf="!alterView.islogedIn">
+        <li class="nav-item active mx-2">
+          <a class="nav-link waves-light" mdbWavesEffect (click)="openRegisterModal()">signup</a>
+  
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link waves-light" mdbWavesEffect (click)="openLoginModal()">signin</a>
+  
+        </li>
+      </ul> -->
+   
+      <ul class="navbar-nav ml-auto" *ngIf="alterView.islogedIn">
+        <li  class="nav-item active">
+          <a buttton class="nav-link waves-light" mdbWavesEffect  routerLink ="/wishlist"><mdb-icon fas icon="heart" ></mdb-icon> <span class="sr-only">(current)</span>
+            </a>
+        
+        </li>
+     
+        <li class="nav-item cart">
+          <a button class="nav-link" routerLink ="/Cart">
+          <i style="font-size: 17px;"class= "fas fa-cart-plus"></i>  
+          <div  style="font-size: 9px;" class="badge badge-danger">{{SumItem}}</div>
+          </a>
+        </li>
+  
+  
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            <mdb-icon fas icon="user"></mdb-icon> Profile<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+          </div>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  
+  </mdb-navbar>
+  <!--/.Navbar-->
+  
