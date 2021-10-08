@@ -17,15 +17,16 @@
     overflow: hidden;
     background-color: lavender;
     height: 1.5cm;
+    width: 100%;
   }
   
   .topnav a 
   {
     float: right;
     display: block;
-    color: aquamarine;
+    // color: aquamarine;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 11px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -75,4 +76,15 @@
     }
 
   }
-  
+
+//   .fa-search
+//   {
+//       width:70%;
+//       position: center;
+//   }
+  #search 
+  {
+    margin: 0 auto;
+    display: inline-block;
+    position: center;
+}

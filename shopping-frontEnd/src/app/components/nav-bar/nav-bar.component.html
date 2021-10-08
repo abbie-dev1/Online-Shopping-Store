@@ -58,16 +58,21 @@
 <div>
     <div class="topnav" id="myTopnav">
       
-            <a href="#home" class="active" >
-                <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png">Home</a>
+            <a href="#home" class="active" >AB_TECH
+                <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png">
+            </a>
             
             <a routerLink ="/cart" style="font-size: 17px;"class= "fas fa-cart-plus">
                 <li style="font-size: 9px;" class="badge badge-danger">{{totalItem}}</li>
             </a>
+
             <a href="#profile">
                 <img src="https://img.icons8.com/color/40/000000/circled-user-male-skin-type-7--v2.png"/>
             </a>
-            <a href="#search">Search</a>
+
+            <a href="#search" class="fas fa-search"> 
+                <input type="search" id="search" placeholder="Search" />
+            </a>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
