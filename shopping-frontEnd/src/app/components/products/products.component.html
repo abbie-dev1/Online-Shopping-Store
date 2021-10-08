@@ -29,10 +29,12 @@
     </div>
 </div>
 
+
+
 <!-- <div class="container">
     <div class="row">
         <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
-            <div class="card col-md-3">
+            <div class="card col-md-2">
                 <img src="{{item.image}}" alt="">
                 <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
                 <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
@@ -48,10 +50,45 @@
 
 
 
+
 <div class="shell">
+    <div class="container">
+        <div class="row">
+            <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="col-md-2 col-sm-12 px-4 mt-5">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                        <img src="{{item.image}}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                            <span>view</span>
+                        </div>
+                        <div class="title-product">
+                            <h3 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h3>
+                        </div>
+                        <!-- <div class="description-prod">
+                            <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                        </div> -->
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">R{{item.price}}</span></div>
+                            <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-shopping-basket" (click)=addtocart(item) ></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        </div>
+    </div>
+</div> 
+
+
+
+
+<!-- <div class="shell">
     <div class="container" *ngFor="let item of filterCategory | filter:searchKey:'title'">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 px-4 mt-5">
                 <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
                         <img src="{{item.image}}" alt="Product" class="img-responsive" />
@@ -75,4 +112,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
