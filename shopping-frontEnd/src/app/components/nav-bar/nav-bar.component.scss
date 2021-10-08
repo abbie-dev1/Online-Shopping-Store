@@ -15,12 +15,13 @@
 .topnav 
 {
     overflow: hidden;
-    background-color: silver;
+    background-color: lavender;
+    height: 1.5cm;
   }
   
   .topnav a 
   {
-    float: left;
+    float: right;
     display: block;
     color: aquamarine;
     text-align: center;
@@ -37,8 +38,9 @@
   
   .topnav a.active 
   {
-    background-color: cornsilk;
+    background-color: crimson;
     color: white;
+    float: left;
   }
   
   .topnav .icon 
@@ -73,8 +75,4 @@
     }
 
   }
-
-  .move
-  {
-      margin-left: 30cm;
-  }
+  

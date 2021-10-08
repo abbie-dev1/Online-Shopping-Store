@@ -57,24 +57,18 @@
 
 <div>
     <div class="topnav" id="myTopnav">
-        <div>
+      
             <a href="#home" class="active" >
                 <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png">Home</a>
-        </div>
-        <div >
-        <div>
-            <ul class="nav-item cart">
-                <a button class="nav-link" routerLink ="/cart" >
-                <i style="font-size: 17px;"class= "fas fa-cart-plus" class="move"></i>  
-                <div  style="font-size: 9px;" class="badge badge-danger">{{totalItem}}</div>
-                </a>
-                <a href="#contact">Contact</a>
-              </ul>
-        </div>
-        <!-- <div>
-            <a href="#contact">Contact</a>
-        </div> -->
-        </div>
+            
+            <a routerLink ="/cart" style="font-size: 17px;"class= "fas fa-cart-plus">
+                <li style="font-size: 9px;" class="badge badge-danger">{{totalItem}}</li>
+            </a>
+            <a href="#profile">
+                <img src="https://img.icons8.com/color/40/000000/circled-user-male-skin-type-7--v2.png"/>
+            </a>
+            <a href="#search">Search</a>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
