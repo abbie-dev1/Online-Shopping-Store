@@ -1,84 +1,23 @@
-<!-- <header>
-    <div class="navbar navbar-dark bg-primary shadow-sm">
-        <div class="navbar-brand align-item-center d-flex">
-                <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png" class="mb-5"/>&nbsp;
-        
-            <strong style="font-size: 20px;">AB_Tech</strong>
-            <div class="form-group">
-                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
-            </div>
-            <span class="fas fa-search search-icon"></span>
-
-
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">AB_TECH
+        <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png"></a>
+    <a>
+        <div href="#profile">
+            <img src="https://img.icons8.com/color/50/000000/circled-user-male-skin-type-7--v2.png"/>
         </div>
-        <button routerLink="cart" class="btn btn-primary">
-            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
-            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
-        </button>
-    </div>
-</header> -->
-
-
-
-<!-- <div class="nav">
-    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
-        <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png" class="mb-1">
-        <h1> <mdb-navbar-brand><a class="navbar-brand" href="#">AB_Tech</a></mdb-navbar-brand></h1>
-
-        <links>
-          <ul class="navbar-nav ml-auto">
-            <li  class="nav-item active">
-              <a buttton class="nav-link waves-light" mdbWavesEffect  routerLink ="/wishlist"><mdb-icon fas icon="heart" ></mdb-icon> <span class="sr-only">(current)</span>
-                </a>
-            
-            </li>
-         
-            <li class="nav-item cart">
-              <a button class="nav-link" routerLink ="/cart">
-              <i style="font-size: 17px;"class= "fas fa-cart-plus"></i>  
-              <div  style="font-size: 9px;" class="badge badge-danger">{{totalItem}}</div>
-              </a>
-            </li>
-    
-            <li class="nav-item dropdown" dropdown>
-              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                <mdb-icon fas icon="user"></mdb-icon> Profile<span class="caret"></span></a>
-              <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-                <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
-                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
-              </div>
-            </li>
-          </ul>
-        </links>
-    </mdb-navbar>
-</div> -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div>
-    <div class="topnav" id="myTopnav">
-      
-            <a href="#home" class="active" >AB_TECH
-                <img src="https://img.icons8.com/emoji/40/000000/desktop-computer.png">
-            </a>
-            
-            <a routerLink ="/cart" style="font-size: 17px;"class= "fas fa-cart-plus">
-                <li style="font-size: 9px;" class="badge badge-danger">{{totalItem}}</li>
-            </a>
-
-            <a href="#profile">
-                <img src="https://img.icons8.com/color/40/000000/circled-user-male-skin-type-7--v2.png"/>
-            </a>
-
-            <a href="#search" class="fas fa-search"> 
-                <input type="search" id="search" placeholder="Search" />
-            </a>
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-</div>
-<br>
-
-
+    </a>
+    <a>
+        <div routerLink ="/cart" style="font-size: 20px;"class= "fas fa-cart-plus">
+            <li style="font-size: 10px;" class="badge badge-danger">{{totalItem}}</li>
+        </div>
+    </a>
+    <a > 
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </div>
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
