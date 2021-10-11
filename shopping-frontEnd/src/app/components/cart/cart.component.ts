@@ -6,23 +6,27 @@ import { CartService } from 'src/app/storeServices/cart.service';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss']
 })
-export class CartComponent implements OnInit {
+export class CartComponent implements OnInit 
+{
 
   public products : any = [];
   public grandTotal !: number;
   constructor(private cartService : CartService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
     this.cartService.getProducts()
     .subscribe(res=>{
       this.products = res;
       this.grandTotal = this.cartService.getTotalPrice();
     })
   }
-  removeItem(item: any){
+  removeItem(item: any)
+  {
     this.cartService.removeCartItem(item);
   }
-  emptycart(){
+  emptycart()
+  {
     this.cartService.removeAllCart();
   }
 
