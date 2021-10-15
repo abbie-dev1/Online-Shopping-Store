@@ -33,9 +33,12 @@ export class ProductsComponent implements OnInit {
       this.searchKey = val;
     })
   }
-  addtocart(item: any){
+
+  addtocart(item: any)
+  {
     this.cartService.addtoCart(item);
   }
+  
   filter(category:string)
   { this.filterCategory = this.productList
     .filter((a:any)=>{
