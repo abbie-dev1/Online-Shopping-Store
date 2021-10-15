@@ -7,14 +7,15 @@ import { ApiService } from 'src/app/storeServices/product-details.service';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent implements OnInit {
-
+export class ProductsComponent implements OnInit 
+{
   public productList : any ;
   public filterCategory : any
   searchKey:string ="";
   constructor(private api : ApiService, private cartService : CartService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
     this.api.getProduct()
     .subscribe(res=>{
       this.productList = res;
@@ -38,7 +39,7 @@ export class ProductsComponent implements OnInit {
   {
     this.cartService.addtoCart(item);
   }
-  
+
   filter(category:string)
   { this.filterCategory = this.productList
     .filter((a:any)=>{
