@@ -5,7 +5,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ProductModule } from './products/product/product.module';
 
 @Module({
-  imports: [ProductModule,MongooseModule.forRoot('mongodb+srv://abbie:12345@cluster0.dpntl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')],
+  // imports: [ProductModule,MongooseModule.forRoot('mongodb+srv://abbie:12345@cluster0.dpntl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')],
+  imports: [ProductModule,MongooseModule.forRoot('mongodb+srv://abbie:12345@cluster0.geafq.mongodb.net/test')],
   controllers: [AppController],
   providers: [AppService],
 })
